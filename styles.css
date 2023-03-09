@@ -1,0 +1,157 @@
+body {
+  background: linear-gradient(
+    to top,
+    hsl(240, 73%, 65%) 0%,
+    hsl(240, 73%, 65%) 20%,
+    hsl(273, 75%, 66%) 80%,
+    hsl(273, 75%, 66%) 100%
+  );
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  /* margin: 50px auto; */
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 4rem auto;
+  background-color: hsl(240, 5%, 91%);
+  border-radius: 20px;
+}
+
+.background-mobile {
+  display: none;
+}
+
+.background-desktop {
+  width: 55%;
+  position: absolute;
+  left: -10rem;
+  top: -3rem;
+}
+
+.woman-mobile {
+  display: none;
+}
+
+.woman-desktop {
+  position: relative;
+  right: 8rem;
+  top: 6rem;
+}
+
+.box {
+  position: relative;
+  right: 9rem;
+  bottom: 8rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.faq h1 {
+  font-size: 3em;
+}
+
+.question {
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+  font-weight: bold;
+}
+
+.active .question {
+  font-weight: bold;
+}
+
+.answer {
+  font-size: 0.9em;
+  color: hsl(237, 12%, 33%);
+  display: none;
+}
+
+.active .answer {
+  display: unset;
+}
+
+button {
+  width: 5%;
+  background-color: transparent;
+  border: none;
+  display: inline;
+  margin-left: 1rem;
+}
+
+.active .icon-arrow {
+  transform: rotate(180deg);
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10rem;
+  }
+
+  .background-mobile {
+    display: unset;
+    position: relative;
+    width: 70%;
+    top: -13rem;
+    left: 4rem;
+    margin-bottom: -5rem;
+  }
+
+  .background-desktop {
+    display: none;
+  }
+
+  .woman-mobile {
+    display: unset;
+    position: relative;
+    left: 4rem;
+    top: -8rem;
+    width: 70%;
+  }
+
+  .woman-desktop {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .faq {
+    margin: -9rem 2rem 3rem 3rem;
+  }
+  .faq h1 {
+    text-align: center;
+  }
+
+  .answer {
+    padding-right: 4rem;
+  }
+}
